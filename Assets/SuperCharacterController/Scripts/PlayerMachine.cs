@@ -371,6 +371,8 @@ public class PlayerMachine : SuperStateMachine {
 
         // Apply friction
         moveDirection = Vector3.MoveTowards(moveDirection, Vector3.zero, (30.0f + originalWalkspeed) * controller.deltaTime);
+        // Ski
+        //moveDirection = Vector3.MoveTowards(moveDirection, Vector3.zero, originalWalkspeed/10f * controller.deltaTime);
     }
 
     void Idle_ExitState()
